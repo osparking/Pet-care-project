@@ -11,7 +11,7 @@
 			"name": "user",
 			"item": [
 				{
-					"name": "1. register_vet",
+					"name": "1. register - vet",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -36,6 +36,38 @@
 								"v1",
 								"users",
 								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2. update_vet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"미자\",\r\n    \"lastName\": \"김\",\r\n    \"gender\": \"Female\",\r\n    \"phoneNumber\" : \"01023235151\",\r\n    \"specialization\": \"피부과\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/users/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"update",
+								"1"
 							]
 						}
 					},
