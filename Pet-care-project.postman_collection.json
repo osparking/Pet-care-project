@@ -1,42 +1,47 @@
 {
 	"info": {
-		"_postman_id": "e2915bd4-c083-4fab-935f-13f6510781fe",
+		"_postman_id": "9283b372-a58f-462d-a685-8d7f83e8fee5",
 		"name": "Pet-care-project",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "2382581",
-		"_collection_link": "https://speeding-crescent-635395.postman.co/workspace/My-Workspace~c4143464-8619-4485-b149-ad17e68f9b17/collection/2382581-e2915bd4-c083-4fab-935f-13f6510781fe?action=share&source=collection_link&creator=2382581"
+		"_collection_link": "https://speeding-crescent-635395.postman.co/workspace/My-Workspace~c4143464-8619-4485-b149-ad17e68f9b17/collection/2382581-9283b372-a58f-462d-a685-8d7f83e8fee5?action=share&source=collection_link&creator=2382581"
 	},
 	"item": [
 		{
-			"name": "1. register_vet",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"firstName\": \"소\",\r\n    \"lastName\": \"황\",\r\n    \"gender\": \"male\",\r\n    \"phoneNumber\" : \"01023232323\",\r\n    \"email\": \"hwang@email.com\",\r\n    \"password\": \"1234\",\r\n    \"isUsable\": true,\r\n    \"userType\" : \"VET\",\r\n    \"specialization\": \"외과수술\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "user",
+			"item": [
+				{
+					"name": "1. register_vet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"소\",\r\n    \"lastName\": \"황\",\r\n    \"gender\": \"male\",\r\n    \"phoneNumber\" : \"01023232323\",\r\n    \"email\": \"hwang@email.com\",\r\n    \"password\": \"1234\",\r\n    \"isUsable\": true,\r\n    \"userType\" : \"VET\",\r\n    \"specialization\": \"외과수술\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"register"
+							]
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:9192/api/v1/users/register",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9192",
-					"path": [
-						"api",
-						"v1",
-						"users",
-						"register"
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
