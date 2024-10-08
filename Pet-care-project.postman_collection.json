@@ -95,6 +95,29 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "4. delete user by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9192/api/v1/users/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
