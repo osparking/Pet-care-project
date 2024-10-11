@@ -298,6 +298,29 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "get appointment by no",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9192/api/v1/appointments/1947560391/get_no",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"appointments",
+								"1947560391",
+								"get_no"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
