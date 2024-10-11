@@ -218,6 +218,41 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "get appointment by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-10-14\",\r\n    \"time\": \"10:35\",\r\n    \"reason\": \"그루보고 짖는 원인 문의\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/appointments/4/get_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"appointments",
+								"4",
+								"get_id"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
