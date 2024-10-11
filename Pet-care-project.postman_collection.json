@@ -253,6 +253,29 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "delete appointment by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9192/api/v1/appointments/3/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"appointments",
+								"3",
+								"delete"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
