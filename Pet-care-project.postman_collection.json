@@ -121,10 +121,10 @@
 				{
 					"name": "4. delete user by id",
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9192/api/v1/users/user/1",
+							"raw": "http://localhost:9192/api/v1/users/delete/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -134,8 +134,86 @@
 								"api",
 								"v1",
 								"users",
-								"user",
+								"delete",
 								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "appointment",
+			"item": [
+				{
+					"name": "update appointment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-10-14\",\r\n    \"time\": \"10:35\",\r\n    \"reason\": \"그루보고 짖는 원인 문의\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/appointments/3/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"appointments",
+								"3",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "book appointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-10-12\",\r\n    \"time\": \"13:20\",\r\n    \"reason\": \"많이 빠지는 털 원인 규명\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/appointments/create?senderId=2&recipientId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"appointments",
+								"create"
+							],
+							"query": [
+								{
+									"key": "senderId",
+									"value": "2"
+								},
+								{
+									"key": "recipientId",
+									"value": "1"
+								}
 							]
 						}
 					},
