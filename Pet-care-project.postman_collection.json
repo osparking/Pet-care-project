@@ -276,6 +276,28 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "get all appointment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9192/api/v1/appointments/get_all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"appointments",
+								"get_all"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
