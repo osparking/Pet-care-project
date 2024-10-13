@@ -467,6 +467,66 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "pet",
+			"item": [
+				{
+					"name": "1. find pet by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9192/api/v1/pets/1/get_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"pets",
+								"1",
+								"get_id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2. update pet by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"구름\",\r\n    \"type\": \"개\",\r\n    \"color\": \"아이보리\",\r\n    \"breed\": \"보더피츠\",\r\n    \"age\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/pets/1/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"pets",
+								"1",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
