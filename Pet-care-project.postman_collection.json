@@ -525,6 +525,71 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "3. delete pet by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9192/api/v1/pets/3/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"pets",
+								"3",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "photo",
+			"item": [
+				{
+					"name": "upload_photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/study/fullstack/react/images/face_1.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/photos/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"photos",
+								"upload"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
