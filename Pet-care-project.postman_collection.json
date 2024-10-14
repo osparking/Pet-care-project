@@ -555,7 +555,7 @@
 			"name": "photo",
 			"item": [
 				{
-					"name": "upload_photo",
+					"name": "upload_new",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -564,13 +564,13 @@
 							"formdata": [
 								{
 									"key": "userId",
-									"value": "1",
+									"value": "2",
 									"type": "text"
 								},
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/D:/study/fullstack/react/images/face_1.png"
+									"src": "/D:/study/fullstack/react/images/girl_1.png"
 								}
 							]
 						},
@@ -586,6 +586,44 @@
 								"v1",
 								"photos",
 								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/study/fullstack/react/images/girl_2.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/photos/2/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"photos",
+								"2",
+								"update"
 							]
 						}
 					},
