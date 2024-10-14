@@ -607,12 +607,12 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/D:/study/fullstack/react/images/girl_2.jpg"
+									"src": "/D:/study/fullstack/react/images/beauty.jpg"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:9192/api/v1/photos/2/update",
+							"raw": "http://localhost:9192/api/v1/photos/1/update",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -622,7 +622,7 @@
 								"api",
 								"v1",
 								"photos",
-								"2",
+								"1",
 								"update"
 							]
 						}
