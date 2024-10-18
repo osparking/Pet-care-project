@@ -773,6 +773,71 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "delete review",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"알고보니, 이 수의사는 쵝오다.\",\r\n    \"stars\": \"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/reviews/4/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"4",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all review by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9192/api/v1/reviews/1/get_user_id?page=0&size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"1",
+								"get_user_id"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
