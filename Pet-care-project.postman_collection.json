@@ -592,6 +592,44 @@
 					"response": []
 				},
 				{
+					"name": "delete by User Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userId",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/study/fullstack/react/images/girl_1.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/photos/1/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"photos",
+								"1",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "update",
 					"request": {
 						"method": "PUT",
@@ -624,6 +662,81 @@
 								"photos",
 								"1",
 								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9192/api/v1/photos/1/get_id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"photos",
+								"1",
+								"get_id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "review",
+			"item": [
+				{
+					"name": "write review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"나는 이런 저런 이유로 별 네개를 주었다.\",\r\n    \"stars\": \"4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/reviews/create?patientId=2&vetId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"create"
+							],
+							"query": [
+								{
+									"key": "patientId",
+									"value": "2"
+								},
+								{
+									"key": "vetId",
+									"value": "1"
+								}
 							]
 						}
 					},
