@@ -741,6 +741,38 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "update review",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"알고보니, 이 수의사는 쵝오다.\",\r\n    \"stars\": \"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9192/api/v1/reviews/3/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9192",
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"3",
+								"update"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
